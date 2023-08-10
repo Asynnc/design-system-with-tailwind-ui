@@ -1,11 +1,4 @@
-import {
-  ChefHat,
-  Home,
-  HomeIcon,
-  LifeBuoy,
-  Search,
-  Settings,
-} from 'lucide-react'
+import { Search } from 'lucide-react'
 import { Logo } from './Logo'
 import { MainNavigation } from './MainNavigation'
 import { WidgetMetric } from './WidgetMetric/index'
