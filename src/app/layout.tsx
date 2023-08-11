@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Sidebar from './components/Sidebar'
+import { ScrollProgressHorizontal } from './components/ProgressBar/Scroll'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="grid min-h-screen grid-cols-app">
           <Sidebar />
-          <main className="px-4 pb-12 pt-8">{children}</main>
+          <main className="px-4 pb-12 pt-8">
+            <ScrollProgressHorizontal />
+            {children}
+          </main>
         </div>
       </body>
     </html>
