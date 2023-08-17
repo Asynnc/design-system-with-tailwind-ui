@@ -4,7 +4,7 @@ import { MainNavigation } from './MainNavigation'
 import { WidgetMetric } from './WidgetMetric/index'
 import { Divider } from './Divider'
 import { Profile } from './Profile'
-import { Input } from './Input'
+import { Input } from '../Input'
 import { SecondaryNavigation } from './SecondaryNavigation'
 
 export default function Sidebar() {
