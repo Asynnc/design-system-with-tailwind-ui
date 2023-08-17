@@ -156,7 +156,7 @@ export default function Home() {
               Portfolio Projects
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 {' '}
-                Share a few snippets fo your work.{' '}
+                Share a few snippets of your work.{' '}
               </span>
             </label>
             <div className="grid grid-cols-2 gap-6"></div>
