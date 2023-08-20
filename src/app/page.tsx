@@ -170,7 +170,8 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-6">
               <FileInput.Root>
                 <FileInput.Trigger />
-                <FileInput.Control />
+                <FileInput.FileList />
+                <FileInput.Control multiple />
               </FileInput.Root>
             </div>
           </div>
