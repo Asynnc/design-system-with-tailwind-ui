@@ -6,6 +6,7 @@ import { SettingsTabs } from './components/Tabs/SettingsTabs'
 import { Divider } from './components/Sidebar/Divider'
 import * as FileInput from './components/Form/FileInput'
 import { Select } from './components/Form/Select/Select'
+import { SelectItem } from './components/Form/Select/SelectItem'
 
 export default function Home() {
   return (
@@ -132,7 +133,10 @@ export default function Home() {
               Country
             </label>
             <div className="grid grid-cols-2 gap-6">
-              <Select />
+              <Select placeholder="Select a country...">
+                <SelectItem value="br" text="Brazil" />
+                <SelectItem value="us" text="United States" />
+              </Select>
             </div>
           </div>
           <Divider />
@@ -143,7 +147,15 @@ export default function Home() {
             >
               Timezone
             </label>
-            <div className="grid grid-cols-2 gap-6"></div>
+            <div className="grid grid-cols-2 gap-6">
+              <Select placeholder="Select a timezone">
+                <SelectItem
+                  value="pst"
+                  text="Pacific Standard Time (UTC-08:00)"
+                />
+                <SelectItem value="asp" text="America Sao Paulo (UTC-03:00)" />
+              </Select>
+            </div>
           </div>
           <Divider />
           <div className="grid grid-cols-form gap-3">
