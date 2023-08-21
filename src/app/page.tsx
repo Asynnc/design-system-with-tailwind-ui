@@ -1,9 +1,11 @@
-import { Mail, UploadCloud, User } from 'lucide-react'
+'use client'
+
+import { Mail } from 'lucide-react'
 import { Input } from './components/Input'
 import { SettingsTabs } from './components/Tabs/SettingsTabs'
 import { Divider } from './components/Sidebar/Divider'
-
 import * as FileInput from './components/Form/FileInput'
+import { Select } from './components/Form/Select/Select'
 
 export default function Home() {
   return (
@@ -129,7 +131,9 @@ export default function Home() {
             >
               Country
             </label>
-            <div className="grid grid-cols-2 gap-6"></div>
+            <div className="grid grid-cols-2 gap-6">
+              <Select />
+            </div>
           </div>
           <Divider />
           <div className="grid grid-cols-form gap-3">
