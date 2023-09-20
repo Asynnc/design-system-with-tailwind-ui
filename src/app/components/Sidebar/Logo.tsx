@@ -31,7 +31,7 @@ export function Logo() {
           />
         </g>
       </svg>
-      <span className="">The Coffee Class - 2.1</span>
+      <span className="">The Coffee Class</span>
     </strong>
   )
 }
